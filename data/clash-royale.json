@@ -1,0 +1,155 @@
+{
+  "name": "Clash Royale",
+  "description": "Clash Royale is a real-time strategy game combining card collection with tower defense mechanics. It features a trophy-based ranking system and frequent updates.",
+  "rankingSystem": {
+    "title": "Ranking System",
+    "description": "Clash Royale uses a trophy-based ranking system with leagues and arenas.",
+    "tiers": [
+      "Training Camp",
+      "Goblin Stadium",
+      "Bone Pit",
+      "Barbarian Bowl",
+      "P.E.K.K.A's Playhouse",
+      "Spell Valley",
+      "Builder's Workshop",
+      "Royal Arena",
+      "Frozen Peak",
+      "Jungle Arena",
+      "Hog Mountain",
+      "Electro Valley",
+      "Spooky Town",
+      "Rascal's Hideout",
+      "Serenity Peak",
+      "League 1-10",
+      "Ultimate Champion"
+    ],
+    "details": [
+      "Trophy-based progression system",
+      "Trophies gained/lost based on match results",
+      "Arenas unlock new cards and features",
+      "Leagues (4000+ trophies) offer seasonal rewards",
+      "Season resets drop players slightly but preserve progress"
+    ],
+    "incentives": [
+      "Arena-specific card unlocks",
+      "Seasonal rewards based on league",
+      "Trophy road rewards",
+      "League badges and borders",
+      "Ultimate Champion exclusive rewards"
+    ]
+  },
+  "rewardStructures": {
+    "title": "Reward Structures",
+    "description": "Clash Royale offers multiple reward systems to keep players engaged daily.",
+    "types": [
+      {
+        "name": "Chests",
+        "description": "Rewards earned after battles",
+        "examples": ["Wooden chests", "Silver chests", "Gold chests", "Magical chests", "Giant chests", "Epic chests", "Legendary chests"]
+      },
+      {
+        "name": "Crown Chest",
+        "description": "Daily chest requiring 10 crowns",
+        "examples": ["Cards", "Gold", "Gems"]
+      },
+      {
+        "name": "Trophy Road",
+        "description": "Progressive rewards based on trophy count",
+        "examples": ["Chests", "Gold", "Gems", "Cards", "Emotes"]
+      },
+      {
+        "name": "Seasonal Rewards",
+        "description": "End-of-season rewards based on league",
+        "examples": ["League tokens", "Seasonal chests", "Banners", "Emotes"]
+      },
+      {
+        "name": "Challenges",
+        "description": "Special events with unique rewards",
+        "examples": ["Classic challenges", "Grand challenges", "Special challenges", "Global tournaments"]
+      }
+    ]
+  },
+  "progressionIncentives": {
+    "title": "Progression Incentives",
+    "description": "Multiple progression paths keep players engaged long-term.",
+    "systems": [
+      {
+        "name": "Card Levels",
+        "description": "Upgrade cards to increase power",
+        "rewards": ["Higher card stats", "Better performance", "Access to higher arenas"]
+      },
+      {
+        "name": "King Tower Level",
+        "description": "Account progression through XP",
+        "rewards": ["Higher tower HP", "More card levels", "Unlock features"]
+      },
+      {
+        "name": "Trophy Progression",
+        "description": "Climbing through arenas and leagues",
+        "rewards": ["New cards", "Better chests", "League rewards"]
+      },
+      {
+        "name": "Mastery",
+        "description": "Card-specific progression system",
+        "rewards": ["Mastery badges", "Gold", "Gems", "Banner tokens"]
+      },
+      {
+        "name": "Pass Royale",
+        "description": "Premium battle pass system",
+        "rewards": ["Exclusive emotes", "Tower skins", "Banners", "Chests", "Gold"]
+      }
+    ]
+  },
+  "playerBehaviorIncentives": {
+    "title": "Player Behavior Incentives",
+    "description": "Systems designed to encourage fair play and reduce negative behavior.",
+    "mechanisms": [
+      {
+        "name": "Emote System",
+        "description": "Limited communication through emotes",
+        "features": ["Prevents toxicity", "Expressive gameplay", "Collectible emotes"]
+      },
+      {
+        "name": "Reporting System",
+        "description": "Report players for inappropriate behavior",
+        "consequences": ["Warnings", "Temporary bans", "Permanent bans"]
+      },
+      {
+        "name": "Fair Play",
+        "description": "Matchmaking based on card levels and trophies",
+        "features": ["Level caps in challenges", "Trophy-based matchmaking", "Card level matching"]
+      },
+      {
+        "name": "Positive Reinforcement",
+        "description": "Rewards for consistent play",
+        "rewards": ["Daily rewards", "Crown chests", "Seasonal rewards"]
+      }
+    ]
+  },
+  "competitiveEcosystem": {
+    "title": "Competitive Ecosystem",
+    "description": "A vibrant competitive scene with multiple tournament formats.",
+    "levels": [
+      {
+        "name": "Ladder",
+        "description": "Ranked trophy-based play",
+        "features": ["Trophy progression", "Arena unlocks", "Seasonal resets"]
+      },
+      {
+        "name": "Challenges",
+        "description": "Tournament-style game modes",
+        "features": ["Classic challenges", "Grand challenges", "Special events", "Global tournaments"]
+      },
+      {
+        "name": "Clan Wars",
+        "description": "Team-based competitive mode",
+        "features": ["Clan battles", "War trophies", "Clan rewards", "Collection day"]
+      },
+      {
+        "name": "Professional Scene",
+        "description": "Esports competitions and tournaments",
+        "features": ["CRL (Clash Royale League)", "World Finals", "Monthly qualifiers", "Regional competitions"]
+      }
+    ]
+  }
+}

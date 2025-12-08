@@ -1,0 +1,145 @@
+{
+  "name": "Counter-Strike 2",
+  "description": "Counter-Strike 2 is a tactical first-person shooter developed by Valve. It features a competitive ranking system, weapon skin economy, and a strong esports presence.",
+  "rankingSystem": {
+    "title": "Ranking System",
+    "description": "Counter-Strike 2 uses a skill-based ranking system called Competitive Skill Groups (CS Rating).",
+    "tiers": [
+      "Silver I",
+      "Silver II",
+      "Silver III",
+      "Silver Elite",
+      "Silver Elite Master",
+      "Gold Nova I",
+      "Gold Nova II",
+      "Gold Nova III",
+      "Gold Nova Master",
+      "Master Guardian I",
+      "Master Guardian II",
+      "Master Guardian Elite",
+      "Distinguished Master Guardian",
+      "Legendary Eagle",
+      "Legendary Eagle Master",
+      "Supreme Master First Class",
+      "Global Elite"
+    ],
+    "details": [
+      "18 distinct ranks from Silver I to Global Elite",
+      "Hidden MMR (Matchmaking Rating) determines rank",
+      "Wins and losses affect rank, with performance considered",
+      "Rank decay occurs after inactivity",
+      "Premier mode uses CS Rating (0-50,000+) instead of ranks"
+    ],
+    "incentives": [
+      "Rank badge displayed on profile",
+      "Access to higher-skilled matches",
+      "Prestige of achieving higher ranks",
+      "Competitive matchmaking access",
+      "Prime status benefits"
+    ]
+  },
+  "rewardStructures": {
+    "title": "Reward Structures",
+    "description": "Counter-Strike 2 offers rewards through drops, operations, and the Steam marketplace economy.",
+    "types": [
+      {
+        "name": "Weekly Drops",
+        "description": "Random item drops after matches",
+        "examples": ["Weapon skins", "Cases", "Stickers", "Graffiti"]
+      },
+      {
+        "name": "Operation Passes",
+        "description": "Limited-time operation events",
+        "examples": ["Operation missions", "Exclusive skins", "Coins", "Stars"]
+      },
+      {
+        "name": "Prime Status",
+        "description": "Premium matchmaking with better rewards",
+        "examples": ["Prime-exclusive drops", "Better matchmaking", "Souvenir packages"]
+      },
+      {
+        "name": "Souvenir Packages",
+        "description": "Special drops from major tournaments",
+        "examples": ["Tournament stickers", "Gold signatures", "Special skins"]
+      }
+    ]
+  },
+  "progressionIncentives": {
+    "title": "Progression Incentives",
+    "description": "Multiple progression systems keep players engaged.",
+    "systems": [
+      {
+        "name": "Rank Progression",
+        "description": "Climbing the competitive ranks",
+        "rewards": ["Rank badges", "Better matchmaking", "Prestige"]
+      },
+      {
+        "name": "Operation Stars",
+        "description": "Progress through operation missions",
+        "rewards": ["Operation rewards", "Exclusive items", "Operation coin upgrades"]
+      },
+      {
+        "name": "Service Medals",
+        "description": "Yearly account progression",
+        "rewards": ["Service medals", "Profile customization", "Prestige"]
+      },
+      {
+        "name": "StatTrak Weapons",
+        "description": "Track kills on weapon skins",
+        "rewards": ["Kill counters", "Personalized weapons", "Collection value"]
+      }
+    ]
+  },
+  "playerBehaviorIncentives": {
+    "title": "Player Behavior Incentives",
+    "description": "Systems to maintain competitive integrity and reduce cheating.",
+    "mechanisms": [
+      {
+        "name": "Trust Factor",
+        "description": "Hidden behavioral score affecting matchmaking",
+        "rewards": ["Better teammates", "Fewer cheaters", "Higher quality matches"]
+      },
+      {
+        "name": "Overwatch",
+        "description": "Community-driven anti-cheat system",
+        "rewards": ["XP rewards", "Community contribution", "Better game quality"]
+      },
+      {
+        "name": "Prime Status",
+        "description": "Verified accounts with better matchmaking",
+        "rewards": ["Better teammates", "Reduced cheating", "Prime-exclusive drops"]
+      },
+      {
+        "name": "Cooldowns",
+        "description": "Temporary bans for leaving matches or griefing",
+        "consequences": ["30-minute cooldown", "2-hour cooldown", "24-hour cooldown", "7-day cooldown"]
+      }
+    ]
+  },
+  "competitiveEcosystem": {
+    "title": "Competitive Ecosystem",
+    "description": "A robust competitive scene with multiple levels of play.",
+    "levels": [
+      {
+        "name": "Matchmaking",
+        "description": "Ranked competitive play",
+        "features": ["5v5 matches", "Rank-based matchmaking", "Map selection"]
+      },
+      {
+        "name": "Premier Mode",
+        "description": "CS Rating-based competitive mode",
+        "features": ["Pick/ban system", "CS Rating", "Leaderboards", "Map-specific ratings"]
+      },
+      {
+        "name": "Faceit/ESEA",
+        "description": "Third-party competitive platforms",
+        "features": ["Higher skill ceiling", "128-tick servers", "Tournaments", "Leagues"]
+      },
+      {
+        "name": "Professional Scene",
+        "description": "Major tournaments and leagues",
+        "features": ["Majors", "BLAST", "ESL Pro League", "IEM", "BLAST Premier"]
+      }
+    ]
+  }
+}

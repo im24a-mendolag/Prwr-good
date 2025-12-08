@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff00ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  
+  <!-- Title -->
+  <text x="200" y="40" font-family="Orbitron, sans-serif" font-size="24" font-weight="bold" fill="#00f0ff" text-anchor="middle">Belohnungssystem</text>
+  
+  <!-- Brain Icon -->
+  <circle cx="200" cy="150" r="60" fill="url(#brainGrad)" opacity="0.3"/>
+  <path d="M 200 100 Q 180 120 170 140 Q 160 160 180 170 Q 200 180 220 170 Q 240 160 230 140 Q 220 120 200 100" 
+        fill="none" stroke="url(#brainGrad)" stroke-width="3"/>
+  <path d="M 200 100 Q 190 110 185 130 Q 180 150 190 160 Q 200 170 210 160 Q 220 150 215 130 Q 210 110 200 100" 
+        fill="none" stroke="url(#brainGrad)" stroke-width="2"/>
+  
+  <!-- Dopamine Release -->
+  <circle cx="200" cy="150" r="8" fill="#ff00ff">
+    <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Arrows -->
+  <path d="M 140 150 L 160 150" stroke="#00f0ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 240 150 L 260 150" stroke="#00f0ff" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Labels -->
+  <text x="100" y="155" font-family="Inter, sans-serif" font-size="14" fill="#b8b8d4" text-anchor="middle">Stimulus</text>
+  <text x="300" y="155" font-family="Inter, sans-serif" font-size="14" fill="#b8b8d4" text-anchor="middle">Belohnung</text>
+  
+  <!-- Dopamine Label -->
+  <text x="200" y="100" font-family="Inter, sans-serif" font-size="12" fill="#ff00ff" text-anchor="middle" font-weight="bold">Dopamin</text>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00f0ff"/>
+    </marker>
+  </defs>
+  
+  <!-- Bottom text -->
+  <text x="200" y="250" font-family="Inter, sans-serif" font-size="14" fill="#b8b8d4" text-anchor="middle">Variable Belohnungen maximieren Dopamin-Ausschüttung</text>
+</svg>
+

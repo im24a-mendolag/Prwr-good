@@ -1,0 +1,138 @@
+{
+  "name": "League of Legends",
+  "description": "League of Legends is a multiplayer online battle arena (MOBA) game developed by Riot Games. It features a complex ranking system, seasonal rewards, and a thriving competitive ecosystem.",
+  "rankingSystem": {
+    "title": "Ranking System",
+    "description": "League of Legends uses a tiered ranking system called the League System, divided into multiple tiers and divisions.",
+    "tiers": [
+      "Iron",
+      "Bronze",
+      "Silver",
+      "Gold",
+      "Platinum",
+      "Emerald",
+      "Diamond",
+      "Master",
+      "Grandmaster",
+      "Challenger"
+    ],
+    "details": [
+      "Each tier (except Master+) is divided into 4 divisions (IV, III, II, I)",
+      "Players earn League Points (LP) by winning ranked matches",
+      "Promotion series required to advance between tiers",
+      "Demotion protection prevents immediate rank drops",
+      "Ranked seasons reset periodically, requiring players to climb again"
+    ],
+    "incentives": [
+      "End-of-season rewards based on highest rank achieved",
+      "Ranked borders and loading screen badges",
+      "Victorious skin for Gold+ players",
+      "Ranked icons and emotes",
+      "Exclusive chromas for higher ranks"
+    ]
+  },
+  "rewardStructures": {
+    "title": "Reward Structures",
+    "description": "League of Legends offers various reward systems to keep players engaged throughout the season.",
+    "types": [
+      {
+        "name": "Ranked Rewards",
+        "description": "End-of-season rewards based on rank achievement",
+        "examples": ["Victorious skins", "Ranked borders", "Summoner icons", "Emotes"]
+      },
+      {
+        "name": "Battle Pass",
+        "description": "Event passes with exclusive rewards",
+        "examples": ["Champions", "Skins", "Chroma variants", "Emotes", "Wards"]
+      },
+      {
+        "name": "Daily Missions",
+        "description": "Daily quests providing Blue Essence and XP",
+        "examples": ["Win a match", "Play 3 games", "Deal damage", "Earn takedowns"]
+      },
+      {
+        "name": "Hextech Crafting",
+        "description": "Loot system rewarding players with champion shards, skin shards, and more",
+        "examples": ["Champion capsules", "Masterwork chests", "Key fragments"]
+      }
+    ]
+  },
+  "progressionIncentives": {
+    "title": "Progression Incentives",
+    "description": "Multiple progression systems encourage continuous play and improvement.",
+    "systems": [
+      {
+        "name": "Summoner Level",
+        "description": "Account level system with no maximum cap",
+        "rewards": ["Blue Essence", "Champion capsules", "Level-up rewards"]
+      },
+      {
+        "name": "Champion Mastery",
+        "description": "Individual champion progression system",
+        "rewards": ["Mastery tokens", "Mastery levels (1-7)", "Champion-specific emotes"]
+      },
+      {
+        "name": "Ranked Climb",
+        "description": "Seasonal ranked progression",
+        "rewards": ["LP gains", "Rank promotions", "Seasonal rewards"]
+      },
+      {
+        "name": "Event Passes",
+        "description": "Time-limited progression tracks",
+        "rewards": ["Exclusive skins", "Chroma variants", "Icons", "Emotes"]
+      }
+    ]
+  },
+  "playerBehaviorIncentives": {
+    "title": "Player Behavior Incentives",
+    "description": "Systems designed to promote positive behavior and reduce toxicity.",
+    "mechanisms": [
+      {
+        "name": "Honor System",
+        "description": "Players can honor teammates after matches",
+        "rewards": ["Honor levels (0-5)", "Honor capsules", "Exclusive rewards", "Loading screen badges"]
+      },
+      {
+        "name": "Behavioral Penalties",
+        "description": "Punishments for negative behavior",
+        "consequences": ["Chat restrictions", "Ranked restrictions", "Temporary bans", "Permanent bans"]
+      },
+      {
+        "name": "Reporting System",
+        "description": "Players can report toxic behavior",
+        "impact": ["Automated penalties", "Instant feedback reports", "Behavioral tracking"]
+      },
+      {
+        "name": "Positive Reinforcement",
+        "description": "Rewards for good sportsmanship",
+        "rewards": ["Honor points", "Exclusive skins", "Loading screen recognition"]
+      }
+    ]
+  },
+  "competitiveEcosystem": {
+    "title": "Competitive Ecosystem",
+    "description": "A thriving competitive scene with multiple levels of play.",
+    "levels": [
+      {
+        "name": "Solo Queue",
+        "description": "Individual ranked play",
+        "features": ["Solo/Duo queue", "Flex queue", "Ranked seasons"]
+      },
+      {
+        "name": "Clash",
+        "description": "Team-based tournament system",
+        "features": ["Monthly tournaments", "Team formation", "Brackets", "Trophies"]
+      },
+      {
+        "name": "Professional Scene",
+        "description": "Regional and international competitions",
+        "features": ["LCS", "LEC", "LCK", "LPL", "Worlds Championship"]
+      },
+      {
+        "name": "Amateur Tournaments",
+        "description": "Community-organized competitions",
+        "features": ["Third-party platforms", "Prize pools", "Ranked requirements"]
+      }
+    ]
+  }
+}
