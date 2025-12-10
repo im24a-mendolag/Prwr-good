@@ -24,7 +24,7 @@
       "Global Elite"
     ],
     "details": [
-      "18 distinct ranks from Silver I to Global Elite",
+      "17 distinct ranks from Silver I to Global Elite",
       "Hidden MMR (Matchmaking Rating) determines rank",
       "Wins and losses affect rank, with performance considered",
       "Rank decay occurs after inactivity",
@@ -133,7 +133,7 @@
       {
         "name": "Faceit/ESEA",
         "description": "Third-party competitive platforms",
-        "features": ["Higher skill ceiling", "128-tick servers", "Tournaments", "Leagues"]
+        "features": ["Higher skill ceiling", "64-tick servers", "Tournaments", "Leagues"]
       },
       {
         "name": "Professional Scene",
