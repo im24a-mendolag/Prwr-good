@@ -26,8 +26,8 @@ For every item box on the game pages, the system automatically generates an imag
 
 **Counter-Strike 2 (prefix: `csgo-`):**
 - "Weekly Drops" → `csgo-weekly-drops.jpg` "Done"
-- "Operation Passes" → `csgo-operation-passes.jpg` "Done"
-- "Prime Status" → `csgo-prime-status.jpg`
+- "Operation Passes" → `csgo-operation-passes.jpg` 
+- "Prime Status" → `csgo-prime-status.jpg` "Done"
 - "Souvenir Packages" → `csgo-souvenir-packages.jpg`
 - "Rank Incentives" → `csgo-rank-incentives.jpg`
 

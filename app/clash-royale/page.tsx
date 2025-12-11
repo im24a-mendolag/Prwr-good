@@ -4,10 +4,12 @@ import GameSection from '@/components/GameSection'
 import { useContent } from '@/hooks/useContent'
 import ScrollAnimation from '@/components/ScrollAnimation'
 import { addImagesToItems } from '@/utils/imageUtils'
+import { getContent } from '@/content'
 
 export default function ClashRoyalePage() {
   const { content, lang } = useContent()
   const clashData = content.pages.clashRoyale
+  const englishData = getContent('en').pages.clashRoyale
   const rankLabel = lang === 'de' ? 'Ranganreize' : 'Rank Incentives'
   const rankDesc =
     lang === 'de' ? 'Belohnungen für Fortschritt in Arenen und Ligen' : 'Rewards for progressing through arenas and leagues'
@@ -39,7 +41,7 @@ export default function ClashRoyalePage() {
               description: rankDesc,
               examples: clashData.rankingSystem.incentives,
             },
-          ], 'cr')}
+          ], 'cr', 'jpg', [{ name: 'Rank Incentives', description: '' }])}
         />
       </ScrollAnimation>
 
@@ -48,8 +50,8 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.rewardStructures.title}
           description={clashData.rewardStructures.description}
-          items={addImagesToItems(clashData.rewardStructures.types, 'cr')}
-        />
+          items={addImagesToItems(clashData.rewardStructures.types, 'cr', 'jpg', englishData.rewardStructures.types)}
+          />
       </ScrollAnimation>
 
       {/* Progression Incentives */}
@@ -57,8 +59,8 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.progressionIncentives.title}
           description={clashData.progressionIncentives.description}
-          items={addImagesToItems(clashData.progressionIncentives.systems, 'cr')}
-        />
+          items={addImagesToItems(clashData.progressionIncentives.systems, 'cr', 'jpg', englishData.progressionIncentives.systems)}
+          />
       </ScrollAnimation>
 
       {/* Player Behavior Incentives */}
@@ -66,8 +68,8 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.playerBehaviorIncentives.title}
           description={clashData.playerBehaviorIncentives.description}
-          items={addImagesToItems(clashData.playerBehaviorIncentives.mechanisms, 'cr')}
-        />
+          items={addImagesToItems(clashData.playerBehaviorIncentives.mechanisms, 'cr', 'jpg', englishData.playerBehaviorIncentives.mechanisms)}
+          />
       </ScrollAnimation>
 
       {/* Competitive Ecosystem */}
@@ -75,8 +77,8 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.competitiveEcosystem.title}
           description={clashData.competitiveEcosystem.description}
-          items={addImagesToItems(clashData.competitiveEcosystem.levels, 'cr')}
-        />
+          items={addImagesToItems(clashData.competitiveEcosystem.levels, 'cr', 'jpg', englishData.competitiveEcosystem.levels)}
+          />
       </ScrollAnimation>
 
       {/* Monetization & Revenue */}
@@ -84,7 +86,7 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.monetization.title}
           description={clashData.monetization.description}
-          items={addImagesToItems(clashData.monetization.types, 'cr')}
+          items={addImagesToItems(clashData.monetization.types, 'cr', 'jpg', englishData.monetization.types)}
         />
       </ScrollAnimation>
     </div>
