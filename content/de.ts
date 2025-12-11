@@ -83,7 +83,7 @@ export const deContent: SiteContent = {
           'Spieler verdienen League Points (LP) durch Siege',
           'Beförderungsserien zum Aufstieg zwischen Tiers',
           'Abstiegsschutz verhindert sofortige Rank-Drops',
-          'Ranglisten-Saisons werden regelmäßig zurückgesetzt',
+          'Ranglisten-Saisons werden regelmäßig§ zurückgesetzt',
         ],
         incentives: [
           'Saisonabschluss-Belohnungen basierend auf dem höchsten Rang',

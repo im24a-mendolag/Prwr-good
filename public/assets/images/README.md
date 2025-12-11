@@ -21,7 +21,7 @@ For every item box on the game pages, the system automatically generates an imag
 - "Ranked Rewards" → `lol-ranked-rewards.jpg`
 - "Battle Pass" → `lol-battle-pass.jpg` "Done"
 - "Hextech Crafting" → `lol-hextech-crafting.jpg`
-- "Daily Missions" → `lol-daily-missions.jpg`
+- "Daily Missions" → `lol-daily-missions.jpg` "done"
 - "Rank Incentives" → `lol-rank-incentives.jpg`
 
 **Counter-Strike 2 (prefix: `csgo-`):**
