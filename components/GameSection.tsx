@@ -49,7 +49,7 @@ export default function GameSection({
       }
 
   return (
-    <section className="mb-12">
+    <section className="mb-12 fade-in">
       <h2 className="subsection-title">{title}</h2>
       <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg">{description}</p>
       

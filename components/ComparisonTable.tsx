@@ -16,7 +16,7 @@ export default function ComparisonTable({ data, title }: ComparisonTableProps) {
   const notAvailable = lang === 'de' ? 'k. A.' : 'N/A'
 
   return (
-    <div className="card mb-8">
+    <div className="card mb-8 hover-glow">
       <h2 className="subsection-title mb-6">{title}</h2>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
@@ -37,7 +37,7 @@ export default function ComparisonTable({ data, title }: ComparisonTableProps) {
             {categories.map((category, index) => (
               <tr
                 key={category}
-                className={`border-b border-gray-200 dark:border-gray-700 ${
+                className={`border-b border-gray-200 dark:border-gray-700 transition-colors hover:bg-gray-100 dark:hover:bg-gray-700/50 ${
                   index % 2 === 0 ? 'bg-gray-50 dark:bg-gray-800/50' : ''
                 }`}
               >
