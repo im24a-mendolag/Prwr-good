@@ -12,13 +12,16 @@ export default function GameCard({ game }: GameCardProps) {
 
   return (
     <Link href={`/${game.id}`}>
-      <div className={`card bg-gradient-to-br ${game.color} text-white hover:scale-105 transition-transform duration-200 cursor-pointer h-full`}>
+      <div className={`card bg-gradient-to-br ${game.color} text-white hover:scale-105 transition-all duration-300 cursor-pointer h-full hover:shadow-2xl group`}>
         <div className="flex flex-col h-full">
-          <div className="text-6xl mb-4">{game.icon}</div>
+          <div className="text-6xl mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-3">
+            {game.icon}
+          </div>
           <h3 className="text-2xl font-bold mb-2">{game.name}</h3>
           <p className="text-white/90 flex-grow">{game.description}</p>
-          <div className="mt-4 flex items-center text-white/80">
+          <div className="mt-4 flex items-center text-white/80 group-hover:text-white transition-colors">
             <span className="text-sm font-semibold">{cta}</span>
+            <span className="ml-2 transition-transform duration-300 group-hover:translate-x-1">→</span>
           </div>
         </div>
       </div>

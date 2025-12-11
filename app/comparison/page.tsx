@@ -2,6 +2,7 @@
 
 import ComparisonTable from '@/components/ComparisonTable'
 import { useContent } from '@/hooks/useContent'
+import ScrollAnimation from '@/components/ScrollAnimation'
 
 export default function ComparisonPage() {
   const { content, lang } = useContent()
@@ -29,35 +30,50 @@ export default function ComparisonPage() {
   return (
     <div className="container-custom py-12">
       {/* Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-          {comparison.title}
-        </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          {comparison.description}
-        </p>
-      </div>
+      <ScrollAnimation>
+        <div className="text-center mb-12">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+            {comparison.title}
+          </h1>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            {comparison.description}
+          </p>
+        </div>
+      </ScrollAnimation>
 
       {/* Ranking System Comparison */}
-      <ComparisonTable data={comparison.ranking} title={labels.ranking} />
+      <ScrollAnimation delay={50}>
+        <ComparisonTable data={comparison.ranking} title={labels.ranking} />
+      </ScrollAnimation>
 
       {/* Reward Structures Comparison */}
-      <ComparisonTable data={comparison.rewards} title={labels.rewards} />
+      <ScrollAnimation delay={100}>
+        <ComparisonTable data={comparison.rewards} title={labels.rewards} />
+      </ScrollAnimation>
 
       {/* Progression Incentives Comparison */}
-      <ComparisonTable data={comparison.progression} title={labels.progression} />
+      <ScrollAnimation delay={150}>
+        <ComparisonTable data={comparison.progression} title={labels.progression} />
+      </ScrollAnimation>
 
       {/* Player Behavior Comparison */}
-      <ComparisonTable data={comparison.behavior} title={labels.behavior} />
+      <ScrollAnimation delay={200}>
+        <ComparisonTable data={comparison.behavior} title={labels.behavior} />
+      </ScrollAnimation>
 
       {/* Competitive Ecosystem Comparison */}
-      <ComparisonTable data={comparison.ecosystem} title={labels.ecosystem} />
+      <ScrollAnimation delay={250}>
+        <ComparisonTable data={comparison.ecosystem} title={labels.ecosystem} />
+      </ScrollAnimation>
 
       {/* Monetization Comparison */}
-      <ComparisonTable data={comparison.monetization} title={labels.monetization} />
+      <ScrollAnimation delay={300}>
+        <ComparisonTable data={comparison.monetization} title={labels.monetization} />
+      </ScrollAnimation>
 
       {/* Summary Section */}
-      <div className="card mt-12">
+      <ScrollAnimation delay={350}>
+        <div className="card mt-12">
         <h2 className="subsection-title mb-6">{labels.takeaways}</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -86,6 +102,7 @@ export default function ComparisonPage() {
           </div>
         </div>
       </div>
+      </ScrollAnimation>
     </div>
   )
 }

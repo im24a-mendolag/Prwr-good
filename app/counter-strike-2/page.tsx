@@ -2,6 +2,7 @@
 
 import GameSection from '@/components/GameSection'
 import { useContent } from '@/hooks/useContent'
+import ScrollAnimation from '@/components/ScrollAnimation'
 
 export default function CounterStrike2Page() {
   const { content, lang } = useContent()
@@ -13,64 +14,78 @@ export default function CounterStrike2Page() {
   return (
     <div className="container-custom py-12">
       {/* Header */}
-      <div className="text-center mb-12">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent">
-          🎯 {csData.name}
-        </h1>
-        <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-          {csData.description}
-        </p>
-      </div>
+      <ScrollAnimation>
+        <div className="text-center mb-12">
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent">
+            🎯 {csData.name}
+          </h1>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            {csData.description}
+          </p>
+        </div>
+      </ScrollAnimation>
 
       {/* Ranking System */}
-      <GameSection
-        title={csData.rankingSystem.title}
-        description={csData.rankingSystem.description}
-        tiers={csData.rankingSystem.tiers}
-        details={csData.rankingSystem.details}
-        items={[
-          {
-            name: rankIncentiveLabel,
-            description: rankIncentiveDesc,
-            examples: csData.rankingSystem.incentives,
-          },
-        ]}
-      />
+      <ScrollAnimation delay={50}>
+        <GameSection
+          title={csData.rankingSystem.title}
+          description={csData.rankingSystem.description}
+          tiers={csData.rankingSystem.tiers}
+          details={csData.rankingSystem.details}
+          items={[
+            {
+              name: rankIncentiveLabel,
+              description: rankIncentiveDesc,
+              examples: csData.rankingSystem.incentives,
+            },
+          ]}
+        />
+      </ScrollAnimation>
 
       {/* Reward Structures */}
-      <GameSection
-        title={csData.rewardStructures.title}
-        description={csData.rewardStructures.description}
-        items={csData.rewardStructures.types}
-      />
+      <ScrollAnimation delay={100}>
+        <GameSection
+          title={csData.rewardStructures.title}
+          description={csData.rewardStructures.description}
+          items={csData.rewardStructures.types}
+        />
+      </ScrollAnimation>
 
       {/* Progression Incentives */}
-      <GameSection
-        title={csData.progressionIncentives.title}
-        description={csData.progressionIncentives.description}
-        items={csData.progressionIncentives.systems}
-      />
+      <ScrollAnimation delay={150}>
+        <GameSection
+          title={csData.progressionIncentives.title}
+          description={csData.progressionIncentives.description}
+          items={csData.progressionIncentives.systems}
+        />
+      </ScrollAnimation>
 
       {/* Player Behavior Incentives */}
-      <GameSection
-        title={csData.playerBehaviorIncentives.title}
-        description={csData.playerBehaviorIncentives.description}
-        items={csData.playerBehaviorIncentives.mechanisms}
-      />
+      <ScrollAnimation delay={200}>
+        <GameSection
+          title={csData.playerBehaviorIncentives.title}
+          description={csData.playerBehaviorIncentives.description}
+          items={csData.playerBehaviorIncentives.mechanisms}
+        />
+      </ScrollAnimation>
 
       {/* Competitive Ecosystem */}
-      <GameSection
-        title={csData.competitiveEcosystem.title}
-        description={csData.competitiveEcosystem.description}
-        items={csData.competitiveEcosystem.levels}
-      />
+      <ScrollAnimation delay={250}>
+        <GameSection
+          title={csData.competitiveEcosystem.title}
+          description={csData.competitiveEcosystem.description}
+          items={csData.competitiveEcosystem.levels}
+        />
+      </ScrollAnimation>
 
       {/* Monetization & Revenue */}
-      <GameSection
-        title={csData.monetization.title}
-        description={csData.monetization.description}
-        items={csData.monetization.types}
-      />
+      <ScrollAnimation delay={300}>
+        <GameSection
+          title={csData.monetization.title}
+          description={csData.monetization.description}
+          items={csData.monetization.types}
+        />
+      </ScrollAnimation>
     </div>
   )
 }
