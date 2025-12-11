@@ -3,6 +3,7 @@
 import GameSection from '@/components/GameSection'
 import { useContent } from '@/hooks/useContent'
 import ScrollAnimation from '@/components/ScrollAnimation'
+import { addImagesToItems } from '@/utils/imageUtils'
 
 export default function LeagueOfLegendsPage() {
   const { content, lang } = useContent()
@@ -30,13 +31,13 @@ export default function LeagueOfLegendsPage() {
           description={leagueData.rankingSystem.description}
           tiers={leagueData.rankingSystem.tiers}
           details={leagueData.rankingSystem.details}
-          items={[
+          items={addImagesToItems([
             {
               name: rankIncentiveLabel,
               description: leagueData.rankingSystem.description,
               examples: leagueData.rankingSystem.incentives,
             },
-          ]}
+          ], 'lol')}
         />
       </ScrollAnimation>
 
@@ -45,7 +46,7 @@ export default function LeagueOfLegendsPage() {
         <GameSection
           title={leagueData.rewardStructures.title}
           description={leagueData.rewardStructures.description}
-          items={leagueData.rewardStructures.types}
+          items={addImagesToItems(leagueData.rewardStructures.types, 'lol')}
         />
       </ScrollAnimation>
 
@@ -54,7 +55,7 @@ export default function LeagueOfLegendsPage() {
         <GameSection
           title={leagueData.progressionIncentives.title}
           description={leagueData.progressionIncentives.description}
-          items={leagueData.progressionIncentives.systems}
+          items={addImagesToItems(leagueData.progressionIncentives.systems, 'lol')}
         />
       </ScrollAnimation>
 
@@ -63,7 +64,7 @@ export default function LeagueOfLegendsPage() {
         <GameSection
           title={leagueData.playerBehaviorIncentives.title}
           description={leagueData.playerBehaviorIncentives.description}
-          items={leagueData.playerBehaviorIncentives.mechanisms}
+          items={addImagesToItems(leagueData.playerBehaviorIncentives.mechanisms, 'lol')}
         />
       </ScrollAnimation>
 
@@ -72,7 +73,7 @@ export default function LeagueOfLegendsPage() {
         <GameSection
           title={leagueData.competitiveEcosystem.title}
           description={leagueData.competitiveEcosystem.description}
-          items={leagueData.competitiveEcosystem.levels}
+          items={addImagesToItems(leagueData.competitiveEcosystem.levels, 'lol')}
         />
       </ScrollAnimation>
 
@@ -81,7 +82,7 @@ export default function LeagueOfLegendsPage() {
         <GameSection
           title={leagueData.monetization.title}
           description={leagueData.monetization.description}
-          items={leagueData.monetization.types}
+          items={addImagesToItems(leagueData.monetization.types, 'lol')}
         />
       </ScrollAnimation>
     </div>

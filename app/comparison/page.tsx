@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import ComparisonTable from '@/components/ComparisonTable'
 import { useContent } from '@/hooks/useContent'
 import ScrollAnimation from '@/components/ScrollAnimation'
@@ -77,6 +78,15 @@ export default function ComparisonPage() {
         <h2 className="subsection-title mb-6">{labels.takeaways}</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+            <div className="relative w-16 h-16 mb-3">
+              <Image
+                src="/assets/images/logo_lol.png"
+                alt="League of Legends logo"
+                fill
+                className="object-contain"
+                unoptimized
+              />
+            </div>
             <h3 className="font-semibold text-lg mb-2 text-blue-900 dark:text-blue-200">
               League of Legends
             </h3>
@@ -85,6 +95,15 @@ export default function ComparisonPage() {
             </p>
           </div>
           <div className="p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+            <div className="relative w-16 h-16 mb-3">
+              <Image
+                src="/assets/images/logo_csgo.png"
+                alt="Counter-Strike 2 logo"
+                fill
+                className="object-contain"
+                unoptimized
+              />
+            </div>
             <h3 className="font-semibold text-lg mb-2 text-orange-900 dark:text-orange-200">
               Counter-Strike 2
             </h3>
@@ -93,6 +112,15 @@ export default function ComparisonPage() {
             </p>
           </div>
           <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+            <div className="relative w-16 h-16 mb-3">
+              <Image
+                src="/assets/images/logo_cr.png"
+                alt="Clash Royale logo"
+                fill
+                className="object-contain"
+                unoptimized
+              />
+            </div>
             <h3 className="font-semibold text-lg mb-2 text-purple-900 dark:text-purple-200">
               Clash Royale
             </h3>

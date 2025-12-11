@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useLanguage } from './LanguageProvider'
 
 interface GameSectionProps {
@@ -14,9 +15,13 @@ interface GameSectionProps {
     consequences?: string[]
     rewards?: string[]
     impact?: string[]
+    image?: string
+    imageAlt?: string
   }>
   details?: string[]
   tiers?: string[]
+  headerImage?: string
+  headerImageAlt?: string
 }
 
 export default function GameSection({ 
@@ -25,7 +30,9 @@ export default function GameSection({
   children,
   items,
   details,
-  tiers 
+  tiers,
+  headerImage,
+  headerImageAlt
 }: GameSectionProps) {
   const { lang } = useLanguage()
   const labels = lang === 'de'
@@ -51,6 +58,17 @@ export default function GameSection({
   return (
     <section className="mb-12 fade-in">
       <h2 className="subsection-title">{title}</h2>
+      {headerImage && (
+        <div className="relative w-full h-48 md:h-64 rounded-lg overflow-hidden mb-6 bg-gray-200 dark:bg-gray-700">
+          <Image
+            src={headerImage}
+            alt={headerImageAlt || title}
+            fill
+            className="object-cover"
+            unoptimized
+          />
+        </div>
+      )}
       <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg">{description}</p>
       
       {tiers && (
@@ -84,6 +102,17 @@ export default function GameSection({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((item, index) => (
             <div key={index} className="card">
+              {item.image && (
+                <div className="relative w-full h-40 rounded-lg overflow-hidden mb-4 bg-gray-200 dark:bg-gray-700">
+                  <Image
+                    src={item.image}
+                    alt={item.imageAlt || item.name}
+                    fill
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+              )}
               <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">
                 {item.name}
               </h3>

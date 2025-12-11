@@ -3,6 +3,7 @@
 import GameSection from '@/components/GameSection'
 import { useContent } from '@/hooks/useContent'
 import ScrollAnimation from '@/components/ScrollAnimation'
+import { addImagesToItems } from '@/utils/imageUtils'
 
 export default function ClashRoyalePage() {
   const { content, lang } = useContent()
@@ -32,13 +33,13 @@ export default function ClashRoyalePage() {
           description={clashData.rankingSystem.description}
           tiers={clashData.rankingSystem.tiers}
           details={clashData.rankingSystem.details}
-          items={[
+          items={addImagesToItems([
             {
               name: rankLabel,
               description: rankDesc,
               examples: clashData.rankingSystem.incentives,
             },
-          ]}
+          ], 'cr')}
         />
       </ScrollAnimation>
 
@@ -47,7 +48,7 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.rewardStructures.title}
           description={clashData.rewardStructures.description}
-          items={clashData.rewardStructures.types}
+          items={addImagesToItems(clashData.rewardStructures.types, 'cr')}
         />
       </ScrollAnimation>
 
@@ -56,7 +57,7 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.progressionIncentives.title}
           description={clashData.progressionIncentives.description}
-          items={clashData.progressionIncentives.systems}
+          items={addImagesToItems(clashData.progressionIncentives.systems, 'cr')}
         />
       </ScrollAnimation>
 
@@ -65,7 +66,7 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.playerBehaviorIncentives.title}
           description={clashData.playerBehaviorIncentives.description}
-          items={clashData.playerBehaviorIncentives.mechanisms}
+          items={addImagesToItems(clashData.playerBehaviorIncentives.mechanisms, 'cr')}
         />
       </ScrollAnimation>
 
@@ -74,7 +75,7 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.competitiveEcosystem.title}
           description={clashData.competitiveEcosystem.description}
-          items={clashData.competitiveEcosystem.levels}
+          items={addImagesToItems(clashData.competitiveEcosystem.levels, 'cr')}
         />
       </ScrollAnimation>
 
@@ -83,7 +84,7 @@ export default function ClashRoyalePage() {
         <GameSection
           title={clashData.monetization.title}
           description={clashData.monetization.description}
-          items={clashData.monetization.types}
+          items={addImagesToItems(clashData.monetization.types, 'cr')}
         />
       </ScrollAnimation>
     </div>

@@ -3,6 +3,7 @@
 import GameSection from '@/components/GameSection'
 import { useContent } from '@/hooks/useContent'
 import ScrollAnimation from '@/components/ScrollAnimation'
+import { addImagesToItems } from '@/utils/imageUtils'
 
 export default function CounterStrike2Page() {
   const { content, lang } = useContent()
@@ -32,13 +33,13 @@ export default function CounterStrike2Page() {
           description={csData.rankingSystem.description}
           tiers={csData.rankingSystem.tiers}
           details={csData.rankingSystem.details}
-          items={[
+          items={addImagesToItems([
             {
               name: rankIncentiveLabel,
               description: rankIncentiveDesc,
               examples: csData.rankingSystem.incentives,
             },
-          ]}
+          ], 'csgo')}
         />
       </ScrollAnimation>
 
@@ -47,7 +48,7 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.rewardStructures.title}
           description={csData.rewardStructures.description}
-          items={csData.rewardStructures.types}
+          items={addImagesToItems(csData.rewardStructures.types, 'csgo')}
         />
       </ScrollAnimation>
 
@@ -56,7 +57,7 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.progressionIncentives.title}
           description={csData.progressionIncentives.description}
-          items={csData.progressionIncentives.systems}
+          items={addImagesToItems(csData.progressionIncentives.systems, 'csgo')}
         />
       </ScrollAnimation>
 
@@ -65,7 +66,7 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.playerBehaviorIncentives.title}
           description={csData.playerBehaviorIncentives.description}
-          items={csData.playerBehaviorIncentives.mechanisms}
+          items={addImagesToItems(csData.playerBehaviorIncentives.mechanisms, 'csgo')}
         />
       </ScrollAnimation>
 
@@ -74,7 +75,7 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.competitiveEcosystem.title}
           description={csData.competitiveEcosystem.description}
-          items={csData.competitiveEcosystem.levels}
+          items={addImagesToItems(csData.competitiveEcosystem.levels, 'csgo')}
         />
       </ScrollAnimation>
 
@@ -83,7 +84,7 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.monetization.title}
           description={csData.monetization.description}
-          items={csData.monetization.types}
+          items={addImagesToItems(csData.monetization.types, 'csgo')}
         />
       </ScrollAnimation>
     </div>

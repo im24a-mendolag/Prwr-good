@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import GameCard from '@/components/GameCard'
 import { useContent } from '@/hooks/useContent'
 import ScrollAnimation from '@/components/ScrollAnimation'
@@ -13,13 +14,30 @@ export default function Home() {
     <div className="container-custom py-12">
       {/* Hero Section */}
       <ScrollAnimation>
-        <section className="text-center mb-16 overflow-visible pt-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent break-words overflow-visible leading-[1.3] pb-3">
-            {home.hero.title}
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            {home.hero.description}
-          </p>
+        <section className="text-center mb-16 overflow-visible pt-4 relative">
+          <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden mb-8 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600">
+            <Image
+              src="/assets/images/hero.jpg"
+              alt="Gaming incentives hero"
+              fill
+              className="object-cover opacity-20"
+              priority
+              unoptimized
+              onError={(e) => {
+                // Hide image if it fails to load, show gradient background instead
+                const target = e.target as HTMLImageElement
+                target.style.display = 'none'
+              }}
+            />
+            <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
+              <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent break-words leading-[1.3] pb-3 drop-shadow-lg">
+                {home.hero.title}
+              </h1>
+              <p className="text-lg md:text-2xl text-white/90 max-w-3xl drop-shadow-md">
+                {home.hero.description}
+              </p>
+            </div>
+          </div>
         </section>
       </ScrollAnimation>
 
