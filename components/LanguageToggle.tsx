@@ -9,9 +9,6 @@ export default function LanguageToggle() {
 
   return (
     <div className="flex items-center gap-2">
-      <span className="text-sm text-gray-600 dark:text-gray-300 hidden sm:inline">
-        {content.nav.brand}
-      </span>
       <div className="flex items-center rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
         <button
           className={`px-3 py-1 text-sm font-medium ${

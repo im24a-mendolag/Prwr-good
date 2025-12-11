@@ -62,6 +62,13 @@ export default function LeagueOfLegendsPage() {
         description={leagueData.competitiveEcosystem.description}
         items={leagueData.competitiveEcosystem.levels}
       />
+
+      {/* Monetization & Revenue */}
+      <GameSection
+        title={leagueData.monetization.title}
+        description={leagueData.monetization.description}
+        items={leagueData.monetization.types}
+      />
     </div>
   )
 }

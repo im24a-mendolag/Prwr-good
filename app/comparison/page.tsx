@@ -13,6 +13,7 @@ export default function ComparisonPage() {
         progression: 'Fortschrittsanreize',
         behavior: 'Anreize für Spielerverhalten',
         ecosystem: 'Wettbewerbsökosysteme',
+        monetization: 'Monetarisierung & Umsatz',
         takeaways: 'Wichtigste Erkenntnisse',
       }
     : {
@@ -21,6 +22,7 @@ export default function ComparisonPage() {
         progression: 'Progression Incentives',
         behavior: 'Player Behavior Incentives',
         ecosystem: 'Competitive Ecosystems',
+        monetization: 'Monetization & Revenue',
         takeaways: 'Key Takeaways',
       }
 
@@ -50,6 +52,9 @@ export default function ComparisonPage() {
 
       {/* Competitive Ecosystem Comparison */}
       <ComparisonTable data={comparison.ecosystem} title={labels.ecosystem} />
+
+      {/* Monetization Comparison */}
+      <ComparisonTable data={comparison.monetization} title={labels.monetization} />
 
       {/* Summary Section */}
       <div className="card mt-12">

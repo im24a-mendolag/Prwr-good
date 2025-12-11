@@ -64,6 +64,13 @@ export default function ClashRoyalePage() {
         description={clashData.competitiveEcosystem.description}
         items={clashData.competitiveEcosystem.levels}
       />
+
+      {/* Monetization & Revenue */}
+      <GameSection
+        title={clashData.monetization.title}
+        description={clashData.monetization.description}
+        items={clashData.monetization.types}
+      />
     </div>
   )
 }

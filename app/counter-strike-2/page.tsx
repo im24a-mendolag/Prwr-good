@@ -64,6 +64,13 @@ export default function CounterStrike2Page() {
         description={csData.competitiveEcosystem.description}
         items={csData.competitiveEcosystem.levels}
       />
+
+      {/* Monetization & Revenue */}
+      <GameSection
+        title={csData.monetization.title}
+        description={csData.monetization.description}
+        items={csData.monetization.types}
+      />
     </div>
   )
 }

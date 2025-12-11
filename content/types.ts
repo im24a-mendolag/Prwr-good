@@ -71,6 +71,7 @@ export interface GamePageContent {
   progressionIncentives: GamePageSection
   playerBehaviorIncentives: GamePageSection
   competitiveEcosystem: GamePageSection
+  monetization: GamePageSection
 }
 
 export interface ComparisonData {
@@ -87,6 +88,7 @@ export interface ComparisonContent {
   progression: ComparisonData
   behavior: ComparisonData
   ecosystem: ComparisonData
+  monetization: ComparisonData
   summary: {
     league: string
     cs2: string

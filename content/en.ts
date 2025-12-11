@@ -198,6 +198,42 @@ export const enContent: SiteContent = {
           },
         ],
       },
+      monetization: {
+        title: 'Monetization & Revenue',
+        description: 'League of Legends uses a free-to-play model with optional purchases, focusing on cosmetic items and convenience features.',
+        types: [
+          {
+            name: 'Champion Purchases',
+            description: 'Players can buy champions with Riot Points (RP) or Blue Essence',
+            examples: ['New champions cost 975-9750 RP', 'Champion bundles', 'Champion shards for discounts'],
+            impact: ['Creates urgency for new releases', 'Encourages regular play to earn Blue Essence', 'Premium currency drives direct purchases'],
+          },
+          {
+            name: 'Skin Sales',
+            description: 'Cosmetic skins are the primary revenue driver',
+            examples: ['Epic skins (975 RP)', 'Legendary skins (1820 RP)', 'Ultimate skins (3250 RP)', 'Prestige skins', 'Event-exclusive skins'],
+            impact: ['High profit margins on digital goods', 'Limited-time offers create FOMO', 'Collection completion drives repeat purchases'],
+          },
+          {
+            name: 'Battle Passes',
+            description: 'Event passes provide exclusive rewards for a fixed price',
+            examples: ['Event passes ($10-15)', 'Premium tracks with exclusive skins', 'Time-limited progression'],
+            impact: ['Recurring revenue stream', 'Increases player engagement during events', 'Creates urgency with time limits'],
+          },
+          {
+            name: 'Hextech Crafting',
+            description: 'Loot box system encouraging key purchases',
+            examples: ['Masterwork chests', 'Key fragments', 'Gemstones for rare skins'],
+            impact: ['Gambling mechanics drive spending', 'Rare items create desire', 'Free chests hook players into system'],
+          },
+          {
+            name: 'Account Services',
+            description: 'Convenience purchases for account management',
+            examples: ['Name changes', 'Server transfers', 'XP boosts', 'Champion rentals'],
+            impact: ['Low-cost convenience purchases', 'Recurring revenue from account services', 'Reduces friction for committed players'],
+          },
+        ],
+      },
     },
     counterStrike2: {
       name: 'Counter-Strike 2',
@@ -341,6 +377,42 @@ export const enContent: SiteContent = {
             name: 'Professional Scene',
             description: 'Major tournaments and leagues',
             features: ['Majors', 'BLAST', 'ESL Pro League', 'IEM', 'BLAST Premier'],
+          },
+        ],
+      },
+      monetization: {
+        title: 'Monetization & Revenue',
+        description: 'Counter-Strike 2 generates revenue through the Steam marketplace economy, operation passes, and Prime status subscriptions.',
+        types: [
+          {
+            name: 'Weapon Skin Marketplace',
+            description: 'Players buy and sell skins on Steam Community Market',
+            examples: ['Skin prices range from $0.03 to thousands', 'Steam takes 15% transaction fee', 'Rare skins can cost $10,000+'],
+            impact: ['Creates real-world value perception', 'Trading economy drives engagement', 'Steam marketplace fees generate revenue'],
+          },
+          {
+            name: 'Case Opening',
+            description: 'Loot box system for weapon skins and stickers',
+            examples: ['Cases cost $2.50', 'Keys required to open cases', 'Rare items have low drop rates'],
+            impact: ['Gambling mechanics drive high spending', 'Low probability creates addiction loop', 'Free cases hook players'],
+          },
+          {
+            name: 'Operation Passes',
+            description: 'Limited-time operation events with premium tracks',
+            examples: ['Operation passes ($15)', 'Exclusive operation skins', 'Operation coins and stars'],
+            impact: ['Recurring revenue every few months', 'FOMO drives purchases', 'Exclusive content creates value'],
+          },
+          {
+            name: 'Prime Status',
+            description: 'Premium subscription for better matchmaking',
+            examples: ['One-time purchase or upgrade', 'Better teammates and rewards', 'Prime-exclusive drops'],
+            impact: ['One-time purchase model', 'Improves player experience', 'Reduces cheating in matches'],
+          },
+          {
+            name: 'Souvenir Packages',
+            description: 'Special drops from major tournaments',
+            examples: ['Tournament stickers', 'Gold player signatures', 'Special souvenir skins'],
+            impact: ['Limited availability creates value', 'Tournament engagement drives sales', 'Collector market'],
           },
         ],
       },
@@ -508,6 +580,42 @@ export const enContent: SiteContent = {
           },
         ],
       },
+      monetization: {
+        title: 'Monetization & Revenue',
+        description: 'Clash Royale uses a freemium model with in-app purchases, focusing on progression acceleration and cosmetic items.',
+        types: [
+          {
+            name: 'Gem Purchases',
+            description: 'Premium currency for speeding up progression and buying items',
+            examples: ['Gems cost $0.99-$99.99', 'Used to speed up chests', 'Buy cards and gold', 'Enter challenges'],
+            impact: ['Time pressure creates spending urgency', 'Multiple price points for different spenders', 'Convenience purchases drive revenue'],
+          },
+          {
+            name: 'Pass Royale',
+            description: 'Monthly battle pass subscription',
+            examples: ['$4.99 per month', 'Exclusive tower skins', 'Emotes and banners', 'Chests and gold'],
+            impact: ['Recurring subscription revenue', 'High value perception', 'Creates monthly engagement'],
+          },
+          {
+            name: 'Chest Speed-ups',
+            description: 'Players pay to unlock chests immediately',
+            examples: ['Gems to unlock chests faster', 'Reduces wait times', 'Creates impatience'],
+            impact: ['Time-gating drives purchases', 'Small purchases add up', 'Psychological pressure to spend'],
+          },
+          {
+            name: 'Card Purchases',
+            description: 'Direct card and gold purchases',
+            examples: ['Buy specific cards with gems', 'Gold purchases for upgrades', 'Special offers and bundles'],
+            impact: ['Pay-to-progress faster', 'Creates competitive advantage', 'Whales spend heavily'],
+          },
+          {
+            name: 'Emotes & Cosmetics',
+            description: 'Cosmetic items for personalization',
+            examples: ['Exclusive emotes', 'Tower skins', 'Banners', 'Card backs'],
+            impact: ['Low-cost impulse purchases', 'Collection completion drives spending', 'Social status items'],
+          },
+        ],
+      },
     },
   },
   comparison: {
@@ -621,6 +729,38 @@ export const enContent: SiteContent = {
         'league-of-legends': 'Regional leagues (LCS, LEC, LCK, LPL) + Worlds',
         'counter-strike-2': 'Majors, BLAST, ESL Pro League, IEM',
         'clash-royale': 'CRL (Clash Royale League) + World Finals',
+      },
+    },
+    monetization: {
+      'Primary Revenue Model': {
+        'league-of-legends': 'Free-to-play with cosmetic purchases',
+        'counter-strike-2': 'Steam marketplace economy + operation passes',
+        'clash-royale': 'Freemium with in-app purchases',
+      },
+      'Main Revenue Drivers': {
+        'league-of-legends': ['Skin sales', 'Battle passes', 'Champion purchases', 'Hextech crafting'],
+        'counter-strike-2': ['Case opening', 'Skin marketplace', 'Operation passes', 'Prime status'],
+        'clash-royale': ['Gem purchases', 'Pass Royale', 'Chest speed-ups', 'Card purchases'],
+      },
+      'Average Spending': {
+        'league-of-legends': '$50-200 per year (cosmetics-focused)',
+        'counter-strike-2': '$20-500+ (high variance, skin trading)',
+        'clash-royale': '$10-100+ per month (progression-focused)',
+      },
+      'Whale Strategy': {
+        'league-of-legends': 'Skin collectors, event pass buyers',
+        'counter-strike-2': 'Rare skin collectors, case opening',
+        'clash-royale': 'Progression acceleration, maxed accounts',
+      },
+      'Psychological Triggers': {
+        'league-of-legends': ['FOMO (limited skins)', 'Collection completion', 'Social status'],
+        'counter-strike-2': ['Gambling mechanics', 'Real-world value', 'Rarity perception'],
+        'clash-royale': ['Time pressure', 'Pay-to-win elements', 'Competitive advantage'],
+      },
+      'Revenue Share Model': {
+        'league-of-legends': '100% to Riot Games',
+        'counter-strike-2': 'Steam takes 15% marketplace fee, Valve gets case/key revenue',
+        'clash-royale': '100% to Supercell (App Store/Play Store take 30%)',
       },
     },
     summary: {
