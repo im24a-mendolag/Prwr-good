@@ -4,10 +4,12 @@ import GameSection from '@/components/GameSection'
 import { useContent } from '@/hooks/useContent'
 import ScrollAnimation from '@/components/ScrollAnimation'
 import { addImagesToItems } from '@/utils/imageUtils'
+import { getContent } from '@/content'
 
 export default function CounterStrike2Page() {
   const { content, lang } = useContent()
   const csData = content.pages.counterStrike2
+  const englishData = getContent('en').pages.counterStrike2
   const rankIncentiveLabel = lang === 'de' ? 'Ranganreize' : 'Rank Incentives'
   const rankIncentiveDesc =
     lang === 'de' ? 'Vorteile beim Erreichen höherer Ränge' : 'Benefits of achieving higher ranks'
@@ -39,7 +41,7 @@ export default function CounterStrike2Page() {
               description: rankIncentiveDesc,
               examples: csData.rankingSystem.incentives,
             },
-          ], 'csgo')}
+          ], 'csgo', 'jpg', [{ name: 'Rank Incentives', description: '' }])}
         />
       </ScrollAnimation>
 
@@ -48,8 +50,8 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.rewardStructures.title}
           description={csData.rewardStructures.description}
-          items={addImagesToItems(csData.rewardStructures.types, 'csgo')}
-        />
+          items={addImagesToItems(csData.rewardStructures.types, 'csgo', 'jpg', englishData.rewardStructures.types)}
+          />
       </ScrollAnimation>
 
       {/* Progression Incentives */}
@@ -57,8 +59,8 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.progressionIncentives.title}
           description={csData.progressionIncentives.description}
-          items={addImagesToItems(csData.progressionIncentives.systems, 'csgo')}
-        />
+          items={addImagesToItems(csData.progressionIncentives.systems, 'csgo', 'jpg', englishData.progressionIncentives.systems)}
+          />
       </ScrollAnimation>
 
       {/* Player Behavior Incentives */}
@@ -66,8 +68,8 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.playerBehaviorIncentives.title}
           description={csData.playerBehaviorIncentives.description}
-          items={addImagesToItems(csData.playerBehaviorIncentives.mechanisms, 'csgo')}
-        />
+          items={addImagesToItems(csData.playerBehaviorIncentives.mechanisms, 'csgo', 'jpg', englishData.playerBehaviorIncentives.mechanisms)}
+          />
       </ScrollAnimation>
 
       {/* Competitive Ecosystem */}
@@ -75,8 +77,8 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.competitiveEcosystem.title}
           description={csData.competitiveEcosystem.description}
-          items={addImagesToItems(csData.competitiveEcosystem.levels, 'csgo')}
-        />
+          items={addImagesToItems(csData.competitiveEcosystem.levels, 'csgo', 'jpg', englishData.competitiveEcosystem.levels)}
+          />
       </ScrollAnimation>
 
       {/* Monetization & Revenue */}
@@ -84,7 +86,7 @@ export default function CounterStrike2Page() {
         <GameSection
           title={csData.monetization.title}
           description={csData.monetization.description}
-          items={addImagesToItems(csData.monetization.types, 'csgo')}
+          items={addImagesToItems(csData.monetization.types, 'csgo', 'jpg', englishData.monetization.types)}
         />
       </ScrollAnimation>
     </div>
