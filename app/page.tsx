@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div className="container-custom py-12">
       {/* Hero Section */}
-      <section className="text-center mb-16">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+      <section className="text-center mb-16 overflow-visible pt-4">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent break-words overflow-visible leading-[1.3] pb-3">
           {home.hero.title}
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
