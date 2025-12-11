@@ -1,7 +1,15 @@
+'use client'
+
 import GameSection from '@/components/GameSection'
-import csData from '@/data/counter-strike-2.json'
+import { useContent } from '@/hooks/useContent'
 
 export default function CounterStrike2Page() {
+  const { content, lang } = useContent()
+  const csData = content.pages.counterStrike2
+  const rankIncentiveLabel = lang === 'de' ? 'Ranganreize' : 'Rank Incentives'
+  const rankIncentiveDesc =
+    lang === 'de' ? 'Vorteile beim Erreichen höherer Ränge' : 'Benefits of achieving higher ranks'
+
   return (
     <div className="container-custom py-12">
       {/* Header */}
@@ -22,8 +30,8 @@ export default function CounterStrike2Page() {
         details={csData.rankingSystem.details}
         items={[
           {
-            name: 'Rank Incentives',
-            description: 'Benefits of achieving higher ranks',
+            name: rankIncentiveLabel,
+            description: rankIncentiveDesc,
             examples: csData.rankingSystem.incentives,
           },
         ]}

@@ -4,18 +4,14 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import ThemeToggle from './ThemeToggle'
-
-const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/league-of-legends', label: 'League of Legends' },
-  { href: '/counter-strike-2', label: 'Counter-Strike 2' },
-  { href: '/clash-royale', label: 'Clash Royale' },
-  { href: '/comparison', label: 'Comparison' },
-]
+import LanguageToggle from './LanguageToggle'
+import { useContent } from '@/hooks/useContent'
 
 export default function Navbar() {
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { content } = useContent()
+  const navLinks = content.nav.links
 
   return (
     <nav className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-sm">
@@ -24,7 +20,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Gaming Incentives
+              {content.nav.brand}
             </span>
           </Link>
 
@@ -48,10 +44,11 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* Theme Toggle */}
-          <div className="flex items-center space-x-4">
+          {/* Toggles */}
+          <div className="flex items-center space-x-3">
+            <LanguageToggle />
             <ThemeToggle />
-            
+
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

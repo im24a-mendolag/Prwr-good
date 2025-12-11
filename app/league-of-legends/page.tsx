@@ -1,7 +1,13 @@
+'use client'
+
 import GameSection from '@/components/GameSection'
-import leagueData from '@/data/league-of-legends.json'
+import { useContent } from '@/hooks/useContent'
 
 export default function LeagueOfLegendsPage() {
+  const { content, lang } = useContent()
+  const leagueData = content.pages.leagueOfLegends
+  const rankIncentiveLabel = lang === 'de' ? 'Ranganreize' : 'Rank Incentives'
+
   return (
     <div className="container-custom py-12">
       {/* Header */}
@@ -22,8 +28,8 @@ export default function LeagueOfLegendsPage() {
         details={leagueData.rankingSystem.details}
         items={[
           {
-            name: 'Rank Incentives',
-            description: 'Rewards for achieving and maintaining ranks',
+            name: rankIncentiveLabel,
+            description: leagueData.rankingSystem.description,
             examples: leagueData.rankingSystem.incentives,
           },
         ]}
