@@ -68,3 +68,7 @@ Bitte aktualisieren Sie die Bildnachweise im Footer der `index.html`, wenn Sie B
 3. Website im Browser testen
 4. Bildnachweise im Footer aktualisieren
 
+
+
+
+

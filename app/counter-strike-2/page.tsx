@@ -59,3 +59,7 @@ export default function CounterStrike2Page() {
     </div>
   )
 }
+
+
+
+

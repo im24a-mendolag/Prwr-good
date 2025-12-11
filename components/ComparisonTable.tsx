@@ -72,3 +72,7 @@ export default function ComparisonTable({ data, title }: ComparisonTableProps) {
     </div>
   )
 }
+
+
+
+
