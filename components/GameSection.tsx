@@ -13,6 +13,7 @@ interface GameSectionProps {
     features?: string[]
     consequences?: string[]
     rewards?: string[]
+    impact?: string[]
   }>
   details?: string[]
   tiers?: string[]
