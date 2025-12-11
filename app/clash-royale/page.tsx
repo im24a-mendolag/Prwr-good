@@ -1,7 +1,15 @@
+'use client'
+
 import GameSection from '@/components/GameSection'
-import clashData from '@/data/clash-royale.json'
+import { useContent } from '@/hooks/useContent'
 
 export default function ClashRoyalePage() {
+  const { content, lang } = useContent()
+  const clashData = content.pages.clashRoyale
+  const rankLabel = lang === 'de' ? 'Ranganreize' : 'Rank Incentives'
+  const rankDesc =
+    lang === 'de' ? 'Belohnungen für Fortschritt in Arenen und Ligen' : 'Rewards for progressing through arenas and leagues'
+
   return (
     <div className="container-custom py-12">
       {/* Header */}
@@ -22,8 +30,8 @@ export default function ClashRoyalePage() {
         details={clashData.rankingSystem.details}
         items={[
           {
-            name: 'Rank Incentives',
-            description: 'Rewards for progressing through arenas and leagues',
+            name: rankLabel,
+            description: rankDesc,
             examples: clashData.rankingSystem.incentives,
           },
         ]}

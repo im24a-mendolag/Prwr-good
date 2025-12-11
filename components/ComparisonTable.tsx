@@ -1,23 +1,19 @@
-import { games } from '@/data/games'
+'use client'
 
-interface ComparisonData {
-  [key: string]: {
-    [gameId: string]: string | string[]
-  }
-}
+import { useContent } from '@/hooks/useContent'
+import { ComparisonContent } from '@/content/types'
 
 interface ComparisonTableProps {
-  data: ComparisonData
+  data: ComparisonContent['ranking'] | ComparisonContent['rewards'] | ComparisonContent['progression'] | ComparisonContent['behavior'] | ComparisonContent['ecosystem']
   title: string
 }
 
 export default function ComparisonTable({ data, title }: ComparisonTableProps) {
-  const gameNames = games.reduce((acc, game) => {
-    acc[game.id] = game.name
-    return acc
-  }, {} as Record<string, string>)
-
+  const { content, lang } = useContent()
+  const games = Object.values(content.games)
   const categories = Object.keys(data)
+  const categoryLabel = lang === 'de' ? 'Kategorie' : 'Category'
+  const notAvailable = lang === 'de' ? 'k. A.' : 'N/A'
 
   return (
     <div className="card mb-8">
@@ -26,7 +22,7 @@ export default function ComparisonTable({ data, title }: ComparisonTableProps) {
         <table className="w-full border-collapse">
           <thead>
             <tr className="border-b-2 border-gray-300 dark:border-gray-700">
-              <th className="text-left p-4 font-semibold text-gray-800 dark:text-gray-200">Category</th>
+              <th className="text-left p-4 font-semibold text-gray-800 dark:text-gray-200">{categoryLabel}</th>
               {games.map((game) => (
                 <th
                   key={game.id}
@@ -59,7 +55,7 @@ export default function ComparisonTable({ data, title }: ComparisonTableProps) {
                           ))}
                         </ul>
                       ) : (
-                        <span className="text-sm">{value || 'N/A'}</span>
+                        <span className="text-sm">{value || notAvailable}</span>
                       )}
                     </td>
                   )
