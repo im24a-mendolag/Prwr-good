@@ -15,50 +15,116 @@ For every item box on the game pages, the system automatically generates an imag
 3. **Add game prefix** (`lol-`, `csgo-`, or `cr-`)
 4. **Add file extension** (`.jpg` by default, or `.png`)
 
-### Naming Examples
+## 📋 Current Images Status
 
-**League of Legends (prefix: `lol-`):**
-- "Ranked Rewards" → `lol-ranked-rewards.jpg`
-- "Battle Pass" → `lol-battle-pass.jpg` "Done"
-- "Hextech Crafting" → `lol-hextech-crafting.jpg`
-- "Daily Missions" → `lol-daily-missions.jpg` "done"
-- "Rank Incentives" → `lol-rank-incentives.jpg`
+### ✅ Static Images (Required - All Present)
 
-**Counter-Strike 2 (prefix: `csgo-`):**
-- "Weekly Drops" → `csgo-weekly-drops.jpg` "Done"
-- "Operation Passes" → `csgo-operation-passes.jpg` 
-- "Prime Status" → `csgo-prime-status.jpg` "Done"
-- "Souvenir Packages" → `csgo-souvenir-packages.jpg`
-- "Rank Incentives" → `csgo-rank-incentives.jpg`
+**Hero & Logos:**
+- ✅ `logo_lol.png` - League of Legends logo for game cards
+- ✅ `logo_csgo.png` - Counter-Strike 2 logo for game cards
+- ✅ `logo_cr.png` - Clash Royale logo for game cards
 
-**Clash Royale (prefix: `cr-`):**
-- "Chests" → `cr-chests.jpg`
-- "Crown Chest" → `cr-crown-chest.jpg`
-- "Seasonal Rewards" → `cr-seasonal-rewards.jpg`
-- "Challenges" → `cr-challenges.jpg` (or `.png`)
-- "Trophy Road" → `cr-trophy-road.jpg`
-- "Rank Incentives" → `cr-rank-incentives.jpg`
+### ✅ League of Legends Images (Present)
 
-### All Sections That Use Images
+**Reward Structures:**
+- ✅ `lol-ranked-rewards.jpg` - Ranked Rewards
+- ✅ `lol-battle-pass.jpg` - Battle Pass
+- ✅ `lol-hextech-crafting.jpg` - Hextech Crafting
+- ✅ `lol-daily-missions.jpg` - Daily Missions
 
-This automatic naming applies to **all item boxes** in these sections on each game page:
+**Ranking System:**
+- ✅ `lol-rank-incentives.jpg` - Rank Incentives
 
-- ✅ **Ranking System** - Items in ranking system sections
-- ✅ **Reward Structures** - All reward structure types
-- ✅ **Progression Incentives** - All progression systems
-- ✅ **Player Behavior Incentives** - All behavior mechanisms
-- ✅ **Competitive Ecosystem** - All ecosystem levels
-- ✅ **Monetization & Revenue** - All monetization types
+### ✅ Counter-Strike 2 Images (Present)
 
-## 📋 Required Static Images
+**Reward Structures:**
+- ✅ `csgo-weekly-drops.jpg` - Weekly Drops
+- ✅ `csgo-operation-passes.jpg` - Operation Passes
+- ✅ `csgo-prime-status.jpg` - Prime Status
 
-These images are used in specific locations and need exact names:
+**Ranking System:**
+- ✅ `csgo-rank-incentives.jpg` - Rank Incentives
 
-### Hero & Logos
-- `hero.jpg` - Hero background image on home page (1920x1080px recommended)
-- `logo_lol.png` - League of Legends logo for game cards (transparent background, 200-400px width) "done"
-- `logo_csgo.png` - Counter-Strike 2 logo for game cards (transparent background, 200-400px width) "done"
-- `logo_cr.png` - Clash Royale logo for game cards (transparent background, 200-400px width) "done"
+**Missing:**
+- ✅ `csgo-souvenir-packages.jpg` - Souvenir Packages
+
+### ✅ Clash Royale Images (Present)
+
+**Reward Structures:**
+- ✅ `cr-chests.jpg` - Chests
+- ✅ `cr-crown-chest.jpg` - Crown Chest
+- ✅ `cr-challenges.jpg` - Challenges
+- ✅ `cr-trophy-road.jpg` - Trophy Road
+
+**Ranking System:**
+- ✅ `cr-rank-incentives.jpg` - Rank Incentives
+
+**Missing:**
+- ⚠️ `cr-seasonal-rewards.jpg` - Seasonal Rewards
+
+## 📝 Complete Image Naming Reference
+
+### League of Legends (prefix: `lol-`)
+
+**Reward Structures:**
+- ✅ `lol-ranked-rewards.jpg` - Ranked Rewards
+- ✅ `lol-battle-pass.jpg` - Battle Pass
+- ✅ `lol-hextech-crafting.jpg` - Hextech Crafting
+- ✅ `lol-daily-missions.jpg` - Daily Missions
+
+**Ranking System:**
+- ✅ `lol-rank-incentives.jpg` - Rank Incentives
+
+**Other Sections** (images will be auto-generated from item names):
+- Progression Incentives items
+- Player Behavior Incentives items
+- Competitive Ecosystem items
+- Monetization & Revenue items
+
+### Counter-Strike 2 (prefix: `csgo-`)
+
+**Reward Structures:**
+- ✅ `csgo-weekly-drops.jpg` - Weekly Drops
+- ✅ `csgo-operation-passes.jpg` - Operation Passes
+- ✅ `csgo-prime-status.jpg` - Prime Status
+- ✅ `csgo-souvenir-packages.jpg` - Souvenir Packages
+
+**Ranking System:**
+- ✅ `csgo-rank-incentives.jpg` - Rank Incentives
+
+**Other Sections** (images will be auto-generated from item names):
+- Progression Incentives items
+- Player Behavior Incentives items
+- Competitive Ecosystem items
+- Monetization & Revenue items
+
+### Clash Royale (prefix: `cr-`)
+
+**Reward Structures:**
+- ✅ `cr-chests.jpg` - Chests
+- ✅ `cr-crown-chest.jpg` - Crown Chest
+- ✅ `cr-challenges.jpg` - Challenges
+- ✅ `cr-trophy-road.jpg` - Trophy Road
+- ⚠️ `cr-seasonal-rewards.jpg` - Seasonal Rewards (MISSING)
+
+**Ranking System:**
+- ✅ `cr-rank-incentives.jpg` - Rank Incentives
+
+**Other Sections** (images will be auto-generated from item names):
+- Progression Incentives items
+- Player Behavior Incentives items
+- Competitive Ecosystem items
+- Monetization & Revenue items
+
+## 🔍 Finding Missing Images
+
+To find all possible image names needed, check the item names in:
+- `data/league-of-legends.json`
+- `data/counter-strike-2.json`
+- `data/clash-royale.json`
+
+Each item name in these files corresponds to a potential image name using the naming convention:
+`{game-prefix}-{lowercase-hyphenated-title}.jpg`
 
 ## 📝 Image Naming Guide
 
@@ -109,10 +175,11 @@ You can obtain images from:
 - **Optimization**: Next.js Image component automatically optimizes images
 - **Accessibility**: Alt text is automatically generated from item names
 - **Case Sensitive**: Image names are case-sensitive on some systems, so use lowercase
+- **Language Support**: Images use English names for file paths, but work in all languages
 
 ## 🚀 Quick Start
 
-1. **Identify the box title** you want to add an image to
+1. **Identify the box title** you want to add an image to (use English name)
 2. **Convert it to the naming format**: `{game-prefix}-{lowercase-hyphenated-title}.jpg`
 3. **Place the image** in `public/assets/images/`
 4. **Refresh the page** - the image will appear automatically!
@@ -121,16 +188,23 @@ You can obtain images from:
 
 Want to add an image for "Ranked Rewards" in League of Legends?
 
-1. Box title: "Ranked Rewards"
+1. Box title: "Ranked Rewards" (English name)
 2. Convert: `lol-ranked-rewards.jpg`
 3. Save your image as: `public/assets/images/lol-ranked-rewards.jpg`
-4. Done! The image will automatically appear.
+4. Done! The image will automatically appear in both English and German.
 
-## 📚 Complete Image List Reference
+## 📊 Summary
 
-To see all possible image names, check the actual item names in:
-- `data/league-of-legends.json`
-- `data/counter-strike-2.json`
-- `data/clash-royale.json`
+**Total Images Present:** 18
+- Logos: 3/3 ✅
+- League of Legends: 5 images ✅
+- Counter-Strike 2: 4 images (1 missing)
+- Clash Royale: 5 images (1 missing)
+- Hero: 0/1 ⚠️
 
-Each item name in these files corresponds to a potential image name using the naming convention above.
+**Missing Images:**
+- `hero.jpg` - Hero background
+- `csgo-souvenir-packages.jpg` - Souvenir Packages
+- `cr-seasonal-rewards.jpg` - Seasonal Rewards
+
+Plus any images for items in Progression Incentives, Player Behavior Incentives, Competitive Ecosystem, and Monetization sections that don't have images yet.
