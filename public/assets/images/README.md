@@ -87,7 +87,7 @@ For every item box on the game pages, the system automatically generates an imag
 - ✅ `csgo-weekly-drops.jpg` - Weekly Drops
 - ✅ `csgo-operation-passes.jpg` - Operation Passes
 - ✅ `csgo-prime-status.jpg` - Prime Status
-- ⚠️ `csgo-souvenir-packages.jpg` - Souvenir Packages (MISSING)
+- ✅ `csgo-souvenir-packages.jpg` - Souvenir Packages
 
 **Ranking System:**
 - ✅ `csgo-rank-incentives.jpg` - Rank Incentives

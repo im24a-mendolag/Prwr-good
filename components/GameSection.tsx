@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import Image from 'next/image'
 import { useLanguage } from './LanguageProvider'
 
@@ -58,17 +59,7 @@ export default function GameSection({
   return (
     <section className="mb-12 fade-in">
       <h2 className="subsection-title">{title}</h2>
-      {headerImage && (
-        <div className="relative w-full h-48 md:h-64 rounded-lg overflow-hidden mb-6 bg-gray-200 dark:bg-gray-700">
-          <Image
-            src={headerImage}
-            alt={headerImageAlt || title}
-            fill
-            className="object-cover"
-            unoptimized
-          />
-        </div>
-      )}
+      {headerImage && <HeaderImage src={headerImage} alt={headerImageAlt || title} />}
       <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg">{description}</p>
       
       {tiers && (
@@ -102,17 +93,7 @@ export default function GameSection({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((item, index) => (
             <div key={index} className="card">
-              {item.image && (
-                <div className="relative w-full h-40 rounded-lg overflow-hidden mb-4 bg-gray-200 dark:bg-gray-700">
-                  <Image
-                    src={item.image}
-                    alt={item.imageAlt || item.name}
-                    fill
-                    className="object-cover"
-                    unoptimized
-                  />
-                </div>
-              )}
+              {item.image && <ItemImage src={item.image} alt={item.imageAlt || item.name} />}
               <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-200">
                 {item.name}
               </h3>
@@ -179,6 +160,46 @@ export default function GameSection({
 
       {children}
     </section>
+  )
+}
+
+// Component for header images that hides on error
+function HeaderImage({ src, alt }: { src: string; alt: string }) {
+  const [showImage, setShowImage] = useState(true)
+
+  if (!showImage) return null
+
+  return (
+    <div className="relative w-full h-48 md:h-64 rounded-lg overflow-hidden mb-6 bg-gray-200 dark:bg-gray-700">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className="object-cover"
+        unoptimized
+        onError={() => setShowImage(false)}
+      />
+    </div>
+  )
+}
+
+// Component for item images that hides on error
+function ItemImage({ src, alt }: { src: string; alt: string }) {
+  const [showImage, setShowImage] = useState(true)
+
+  if (!showImage) return null
+
+  return (
+    <div className="relative w-full h-40 rounded-lg overflow-hidden mb-4 bg-gray-200 dark:bg-gray-700">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className="object-cover"
+        unoptimized
+        onError={() => setShowImage(false)}
+      />
+    </div>
   )
 }
 
