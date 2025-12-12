@@ -66,6 +66,7 @@ export interface GamePageSection {
 export interface GamePageContent {
   name: string
   description: string
+  website: string
   rankingSystem: GamePageSection
   rewardStructures: GamePageSection
   progressionIncentives: GamePageSection

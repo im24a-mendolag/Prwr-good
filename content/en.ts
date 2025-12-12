@@ -63,6 +63,7 @@ export const enContent: SiteContent = {
       name: 'League of Legends',
       description:
         'League of Legends is a multiplayer online battle arena (MOBA) game developed by Riot Games. It features a complex ranking system, seasonal rewards, and a thriving competitive ecosystem.',
+      website: 'https://www.leagueoflegends.com/',
       rankingSystem: {
         title: 'Ranking System',
         description:
@@ -240,6 +241,7 @@ export const enContent: SiteContent = {
       name: 'Counter-Strike 2',
       description:
         'Counter-Strike 2 is a tactical first-person shooter developed by Valve. It features a competitive ranking system, weapon skin economy, and a strong esports presence.',
+      website: 'https://www.counter-strike.net/',
       rankingSystem: {
         title: 'Ranking System',
         description: 'Counter-Strike 2 uses a skill-based ranking system called Competitive Skill Groups (CS Rating).',
@@ -422,6 +424,7 @@ export const enContent: SiteContent = {
       name: 'Clash Royale',
       description:
         'Clash Royale is a real-time strategy game combining card collection with tower defense mechanics. It features a trophy-based ranking system and frequent updates.',
+      website: 'https://clashroyale.com/',
       rankingSystem: {
         title: 'Ranking System',
         description: 'Clash Royale uses a trophy-based ranking system with leagues and arenas.',

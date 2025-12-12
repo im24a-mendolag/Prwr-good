@@ -63,6 +63,7 @@ export const deContent: SiteContent = {
       name: 'League of Legends',
       description:
         'League of Legends ist ein Multiplayer-Online-Battle-Arena-Spiel (MOBA) von Riot Games mit komplexem Rangsystem, saisonalen Belohnungen und einer lebendigen Wettbewerbsszene.',
+      website: 'https://www.leagueoflegends.com/',
       rankingSystem: {
         title: 'Rangsystem',
         description:
@@ -240,6 +241,7 @@ export const deContent: SiteContent = {
       name: 'Counter-Strike 2',
       description:
         'Counter-Strike 2 ist ein taktischer Ego-Shooter von Valve mit kompetitivem Rangsystem, Skin-Ökonomie und starker Esports-Präsenz.',
+      website: 'https://www.counter-strike.net/',
       rankingSystem: {
         title: 'Rangsystem',
         description: 'Counter-Strike 2 nutzt ein skillbasiertes Rangsystem (Competitive Skill Groups / CS Rating).',
@@ -423,6 +425,7 @@ export const deContent: SiteContent = {
       name: 'Clash Royale',
       description:
         'Clash Royale ist ein Echtzeit-Strategiespiel mit Kartensammlung und Tower-Defense-Mechaniken, einem pokalbasierten Rangsystem und regelmäßigen Updates.',
+      website: 'https://clashroyale.com/',
       rankingSystem: {
         title: 'Rangsystem',
         description: 'Clash Royale nutzt ein pokalbasiertes Rangsystem mit Arenen und Ligen.',
