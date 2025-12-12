@@ -9,6 +9,7 @@ export const deContent: SiteContent = {
       { href: '/counter-strike-2', label: 'Counter-Strike 2' },
       { href: '/clash-royale', label: 'Clash Royale' },
       { href: '/comparison', label: 'Vergleich' },
+      { href: '/quiz', label: 'Quiz' },
     ],
   },
   footer: {
@@ -768,6 +769,196 @@ export const deContent: SiteContent = {
       clash:
         'Nutze pokalbasierten Fortschritt mit Kartensammlung, täglichen Belohnungen und mobilfreundlicher Wettbewerbsstruktur.',
     },
+  },
+  quiz: {
+    title: 'Gaming-Anreize Quiz',
+    description: 'Teste dein Wissen über Anreizmechanismen in League of Legends, Counter-Strike 2 und Clash Royale!',
+    progress: {
+      question: 'Frage',
+      of: 'von',
+      score: 'Punkte',
+    },
+    actions: {
+      previous: 'Zurück',
+      submit: 'Antwort absenden',
+      next: 'Nächste Frage',
+      finish: 'Quiz beenden',
+    },
+    explanation: 'Erklärung',
+    completed: {
+      title: 'Quiz abgeschlossen!',
+      excellent: 'Ausgezeichnet! Du hast ein tiefes Verständnis für Gaming-Anreizmechanismen.',
+      good: 'Gut gemacht! Du verstehst die Grundlagen, aber es gibt immer noch mehr zu lernen.',
+      keepLearning: 'Weiter lernen! Überprüfe den Inhalt und versuche es erneut, um deine Punktzahl zu verbessern.',
+      restart: 'Quiz neu starten',
+    },
+    questions: [
+      {
+        question: 'Wie viele Rangstufen hat League of Legends?',
+        options: [
+          '8 Stufen',
+          '10 Stufen',
+          '12 Stufen',
+          '15 Stufen',
+        ],
+        correctAnswer: 1,
+        explanation: 'League of Legends verwendet ein gestuftes Rangsystem mit 10 Stufen: Iron, Bronze, Silver, Gold, Platinum, Emerald, Diamond, Master, Grandmaster und Challenger.',
+      },
+      {
+        question: 'Was ist der höchste Rang in Counter-Strike 2?',
+        options: [
+          'Supreme Master First Class',
+          'Global Elite',
+          'Legendary Eagle Master',
+          'Distinguished Master Guardian',
+        ],
+        correctAnswer: 1,
+        explanation: 'Global Elite ist der höchste Rang im kompetitiven Rangsystem von Counter-Strike 2. Der Premier-Modus verwendet stattdessen CS Rating, das bis zu 50.000+ gehen kann.',
+      },
+      {
+        question: 'Welches Spiel verwendet ein pokalbasiertes Rangsystem?',
+        options: [
+          'League of Legends',
+          'Counter-Strike 2',
+          'Clash Royale',
+          'Alle oben genannten',
+        ],
+        correctAnswer: 2,
+        explanation: 'Clash Royale verwendet ein pokalbasiertes Fortschrittssystem, bei dem Spieler basierend auf Match-Ergebnissen Pokale gewinnen oder verlieren und durch Arenen und Ligen aufsteigen.',
+      },
+      {
+        question: 'Was ist das primäre Einnahmemodell für Counter-Strike 2?',
+        options: [
+          'Abonnementgebühren',
+          'Steam-Marktplatz-Ökonomie',
+          'Charakterkäufe',
+          'Nur Battle Pass',
+        ],
+        correctAnswer: 1,
+        explanation: 'Counter-Strike 2 generiert Einnahmen hauptsächlich durch die Steam-Marktplatz-Ökonomie, wo Spieler Waffenskins kaufen und verkaufen. Steam erhebt eine Transaktionsgebühr von 15%.',
+      },
+      {
+        question: 'Welches Spiel bietet "Victorious Skins" als Saisonendbelohnungen an?',
+        options: [
+          'Counter-Strike 2',
+          'Clash Royale',
+          'League of Legends',
+          'Keines der oben genannten',
+        ],
+        correctAnswer: 2,
+        explanation: 'League of Legends vergibt Victorious Skins an Spieler, die am Ende jeder Rangliste-Saison Gold-Rang oder höher erreichen.',
+      },
+      {
+        question: 'Wie heißt das Ehrungssystem von League of Legends?',
+        options: [
+          'Trust Factor',
+          'Honor System',
+          'Reputation System',
+          'Good Behavior Points',
+        ],
+        correctAnswer: 1,
+        explanation: 'League of Legends verwendet ein Honor System, bei dem Spieler nach Matches Teammitglieder ehren können, mit Honor-Leveln von 0 bis 5 und Belohnungen für positives Verhalten.',
+      },
+      {
+        question: 'Wie viele Kronen sind erforderlich, um die tägliche Kronentruhe in Clash Royale freizuschalten?',
+        options: [
+          '5 Kronen',
+          '10 Kronen',
+          '15 Kronen',
+          '20 Kronen',
+        ],
+        correctAnswer: 1,
+        explanation: 'Clash Royale erfordert, dass Spieler täglich 10 Kronen verdienen, um die Kronentruhe freizuschalten, die Karten, Gold und Edelsteine enthält.',
+      },
+      {
+        question: 'Wie heißt das gemeinschaftsgesteuerte Anti-Cheat-System von Counter-Strike 2?',
+        options: [
+          'VAC',
+          'Overwatch',
+          'Trust Factor',
+          'Prime Status',
+        ],
+        correctAnswer: 1,
+        explanation: 'Overwatch ist das gemeinschaftsgesteuerte Anti-Cheat-System von Counter-Strike 2, bei dem erfahrene Spieler gemeldete Fälle von Cheating und Griefing überprüfen.',
+      },
+      {
+        question: 'Welches Spiel verwendet League Points (LP) für den Ranglistenfortschritt?',
+        options: [
+          'Counter-Strike 2',
+          'Clash Royale',
+          'League of Legends',
+          'Alle drei Spiele',
+        ],
+        correctAnswer: 2,
+        explanation: 'League of Legends verwendet League Points (LP), die Spieler durch Siege in Ranglistenspielen verdienen. Spieler müssen LP sammeln und Aufstiegsserien gewinnen, um zwischen den Stufen aufzusteigen.',
+      },
+      {
+        question: 'Wie heißt der Premium-Battle-Pass von Clash Royale?',
+        options: [
+          'Battle Pass',
+          'Operation Pass',
+          'Pass Royale',
+          'Season Pass',
+        ],
+        correctAnswer: 2,
+        explanation: 'Pass Royale ist das monatliche Battle-Pass-Abonnement von Clash Royale (4,99 $/Monat), das exklusive Turm-Skins, Emotes, Banner, Truhen und Gold bietet.',
+      },
+      {
+        question: 'Welches Spiel verfügt über ein "Hextech Crafting" Loot-System?',
+        options: [
+          'Counter-Strike 2',
+          'Clash Royale',
+          'League of Legends',
+          'Keines der oben genannten',
+        ],
+        correctAnswer: 2,
+        explanation: 'League of Legends verfügt über Hextech Crafting, ein Lootbox-System, das Spieler mit Champion-Splittern, Skin-Splittern und anderen Gegenständen durch Truhen und Schlüssel belohnt.',
+      },
+      {
+        question: 'Wie heißt der höchste Rang in Clash Royale?',
+        options: [
+          'Grand Champion',
+          'Ultimate Champion',
+          'Legendary Champion',
+          'Master Champion',
+        ],
+        correctAnswer: 1,
+        explanation: 'Ultimate Champion ist der höchste Rang in Clash Royale, erreicht von Spielern, die die Spitze der Pokalleiter erreichen.',
+      },
+      {
+        question: 'Welches Spiel verwendet einen Premier-Modus mit CS Rating statt traditioneller Ränge?',
+        options: [
+          'League of Legends',
+          'Counter-Strike 2',
+          'Clash Royale',
+          'Alle oben genannten',
+        ],
+        correctAnswer: 1,
+        explanation: 'Counter-Strike 2 verfügt über einen Premier-Modus, der CS Rating (0-50.000+) statt des traditionellen 17-Rang-Systems verwendet, mit karten-spezifischen Bewertungen und einem Pick/Ban-System.',
+      },
+      {
+        question: 'Was ist die primäre Monetarisierungsstrategie für League of Legends?',
+        options: [
+          'Fortschrittsbeschleunigung',
+          'Kosmetische Skin-Verkäufe',
+          'Waffen-Marktplatz',
+          'Abonnementmodell',
+        ],
+        correctAnswer: 1,
+        explanation: 'League of Legends generiert Einnahmen hauptsächlich durch kosmetische Skin-Verkäufe, mit Skins von Epic (975 RP) bis Ultimate (3250 RP), zusammen mit Battle Pässen und Champion-Käufen.',
+      },
+      {
+        question: 'Welches Spiel bietet "Clash"-Turniere?',
+        options: [
+          'Counter-Strike 2',
+          'Clash Royale',
+          'League of Legends',
+          'Sowohl League of Legends als auch Clash Royale',
+        ],
+        correctAnswer: 2,
+        explanation: 'League of Legends bietet Clash, ein monatliches team-basiertes Turniersystem, bei dem Spieler Teams bilden, in Brackets antreten und Trophäen verdienen.',
+      },
+    ],
   },
 }
 

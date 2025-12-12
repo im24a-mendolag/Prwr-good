@@ -96,6 +96,38 @@ export interface ComparisonContent {
   }
 }
 
+export interface QuizQuestion {
+  question: string
+  options: string[]
+  correctAnswer: number
+  explanation: string
+}
+
+export interface QuizContent {
+  title: string
+  description: string
+  progress: {
+    question: string
+    of: string
+    score: string
+  }
+  actions: {
+    previous: string
+    submit: string
+    next: string
+    finish: string
+  }
+  explanation: string
+  completed: {
+    title: string
+    excellent: string
+    good: string
+    keepLearning: string
+    restart: string
+  }
+  questions: QuizQuestion[]
+}
+
 export interface SiteContent {
   nav: NavContent
   footer: FooterContent
@@ -107,6 +139,7 @@ export interface SiteContent {
     clashRoyale: GamePageContent
   }
   comparison: ComparisonContent
+  quiz: QuizContent
 }
 
 

@@ -28,11 +28,14 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => {
               const isActive = pathname === link.href
+              const isQuiz = link.href === '/quiz'
               return (
                 <Link
                   key={link.href}
                   href={link.href}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                    isQuiz ? 'ml-4 mr-[10px]' : ''
+                  } ${
                     isActive
                       ? 'bg-blue-600 text-white dark:bg-blue-500'
                       : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
@@ -94,12 +97,15 @@ export default function Navbar() {
             <div className="flex flex-col space-y-1">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href
+                const isQuiz = link.href === '/quiz'
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
                     className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                      isQuiz ? 'mt-2' : ''
+                    } ${
                       isActive
                         ? 'bg-blue-600 text-white dark:bg-blue-500'
                         : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
