@@ -37,7 +37,11 @@ export default function QuizPage() {
     }
 
     setShowResult(true)
-    setAnsweredQuestions(new Set([...answeredQuestions, currentQuestion]))
+    setAnsweredQuestions(prev => {
+      const newSet = new Set(prev)
+      newSet.add(currentQuestion)
+      return newSet
+    })
   }
 
   const handleNextQuestion = () => {
