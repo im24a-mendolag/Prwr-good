@@ -12,8 +12,11 @@ export default function Footer() {
           <p className="mb-2">
             {content.footer.line1}
           </p>
-          <p className="text-sm">
+          <p className="mb-2 text-sm">
             {content.footer.line2}
+          </p>
+          <p className="text-xs text-gray-500 dark:text-gray-500">
+            {content.footer.line3}
           </p>
         </div>
       </div>

@@ -13,6 +13,7 @@ export interface NavContent {
 export interface FooterContent {
   line1: string
   line2: string
+  line3: string
 }
 
 export interface HeroContent {

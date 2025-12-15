@@ -15,6 +15,7 @@ export const enContent: SiteContent = {
   footer: {
     line1: 'Gaming Incentives Comparison - Educational Project',
     line2: 'Compare incentive mechanisms across League of Legends, Counter-Strike 2, and Clash Royale',
+    line3: 'Screenshots were taken from in-game and YouTube thumbnails',
   },
   home: {
     hero: {

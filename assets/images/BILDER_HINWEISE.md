@@ -59,6 +59,10 @@ https://via.placeholder.com/1920x1080/0a0a0f/00f0ff?text=Hero+Image
 - Game-Screenshots: Fair Use für Bildungszwecke prüfen
 - Logos: Markenrechte beachten
 
+## 📸 Bildquellen
+
+**Screenshots:** Die Screenshots wurden aus dem Spiel (in-game) und von YouTube-Thumbnails aufgenommen.
+
 Bitte aktualisieren Sie die Bildnachweise im Footer der `index.html`, wenn Sie Bilder hinzufügen oder ändern.
 
 ## 🚀 Nach dem Hinzufügen der Bilder

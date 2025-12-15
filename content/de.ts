@@ -15,6 +15,7 @@ export const deContent: SiteContent = {
   footer: {
     line1: 'Vergleich von Gaming-Anreizen – Lernprojekt',
     line2: 'Vergleiche Anreizmechanismen in League of Legends, Counter-Strike 2 und Clash Royale',
+    line3: 'Screenshots wurden aus dem Spiel und von YouTube-Thumbnails aufgenommen',
   },
   home: {
     hero: {

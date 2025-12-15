@@ -162,11 +162,14 @@ The system automatically handles special characters:
 
 ## 🔧 Image Sources
 
+**Screenshots:** Screenshots were taken from in-game and YouTube thumbnails.
+
 You can obtain images from:
 1. **Own Screenshots** - Take screenshots from the games (best quality)
-2. **Placeholder Services** - Use [via.placeholder.com](https://via.placeholder.com) for development
-3. **Stock Photos** - Use services like Unsplash, Pexels (check licenses!)
-4. **Game Assets** - Extract from game files (ensure fair use)
+2. **YouTube Thumbnails** - Extract screenshots from YouTube video thumbnails
+3. **Placeholder Services** - Use [via.placeholder.com](https://via.placeholder.com) for development
+4. **Stock Photos** - Use services like Unsplash, Pexels (check licenses!)
+5. **Game Assets** - Extract from game files (ensure fair use)
 
 ## ⚠️ Important Notes
 
