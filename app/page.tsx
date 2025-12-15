@@ -14,12 +14,12 @@ export default function Home() {
       {/* Hero Section */}
       <ScrollAnimation>
         <section className="text-center mb-16 overflow-visible pt-4 relative">
-          <div className="relative w-full h-64 md:h-96 rounded-2xl overflow-hidden mb-8 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600">
-            <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent break-words leading-[1.3] pb-3 drop-shadow-lg">
+          <div className="relative w-full min-h-[280px] md:min-h-[384px] rounded-2xl overflow-hidden mb-8 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600">
+            <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-6 md:py-8">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-3 md:mb-4 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent break-words leading-tight md:leading-[1.3] drop-shadow-lg">
                 {home.hero.title}
               </h1>
-              <p className="text-lg md:text-2xl text-white/90 max-w-3xl drop-shadow-md">
+              <p className="text-base sm:text-lg md:text-2xl text-white/90 max-w-3xl drop-shadow-md leading-relaxed">
                 {home.hero.description}
               </p>
             </div>
